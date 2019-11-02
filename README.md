@@ -1,8 +1,8 @@
-##CEPGP Raid Tools
+## CEPGP Raid Tools
 
 This is a web application which can be used to display World of Warcraft EPGP standings and transactions exported from the [CEPGP addon](https://github.com/Alumian/CEPGP).
 
-###Features
+### Features
 
 #### General 
 * View guild member EPGP standings.
