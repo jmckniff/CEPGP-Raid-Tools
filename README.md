@@ -10,10 +10,10 @@ This is a web application which can be used to display World of Warcraft EPGP st
 * View EPGP transactions for a specific Guild member.
 
 #### Admin Section
-* Upload EPGP standings exported from CEPGP.
-* Upload EPGP transaction exported from CEPGP.
+* Upload EPGP standings exported from CEPGP "/Admin/Standings"
+* Upload EPGP transaction exported from CEPGP. "/Admin/Transactions"
 
 #### API 
-* JSON endpoint to get all guild member EPGP standings.
-* JSON endpoint to get all EPGP transactions.
-* JSON endpoint to get EPGP transactions for a specific guild member.
+* JSON endpoint to get all guild member EPGP standings "/API/Standings"
+* JSON endpoint to get all EPGP transactions "/API/Transactions"
+* JSON endpoint to get EPGP transactions for a specific guild member "/API/Transactions/Member?username=Chobo"
