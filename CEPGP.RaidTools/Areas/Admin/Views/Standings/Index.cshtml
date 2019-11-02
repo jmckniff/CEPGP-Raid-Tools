@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "CEPGP Standings Upload";
+}
+
+<h2>Upload CEPGP Standings</h2>
+
+@using (Html.BeginForm("Upload", "Standings", FormMethod.Post, new { @class = "form", enctype = "multipart/form-data" }))
+{
+    <div class="row" style="margin-bottom: 20px;">
+        <div class="col-md-12">
+            <input type="file" name="file" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="submit" name="Submit" id="Submit" value="Upload" />
+        </div>
+    </div>
+}

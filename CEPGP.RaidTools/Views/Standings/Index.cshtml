@@ -1,0 +1,43 @@
+﻿@model System.Collections.Generic.IEnumerable<CEPGP.Domain.Member>
+
+@{
+    ViewBag.Title = "CEPGP Guild Standings";
+}
+
+<h2>CEPGP Guild Standings</h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>EP</th>
+            <th>GP</th>
+            <th>PR</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.Name</td>
+                <td>@transaction.EP.Value</td>
+                <td>@transaction.GP.Value</td>
+                <td>@transaction.CalculatePR().Value.ToString("##.##")</td>
+                <td>@Html.ActionLink("View Transactions", "Member", "Transactions", new { username = @transaction.Name}, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function() {
+            $('table').DataTable({
+                "pageLength": 50,
+                "order": [[ 3, "desc" ]]
+            });
+        });
+    </script>
+}

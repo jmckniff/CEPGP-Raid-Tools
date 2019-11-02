@@ -1,0 +1,56 @@
+﻿@model System.Collections.Generic.IEnumerable<CEPGP.Domain.Transaction>
+
+@{
+    ViewBag.Title = "CEPGP Member Transactions";
+}
+
+<h2>CEPGP Transactions</h2>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Target</th>
+            <th>Issued By</th>
+            <th>Action</th>
+            <th>EP Before</th>
+            <th>EP After</th>
+            <th>GP Before</th>
+            <th>GP After</th>
+            <th>Item</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@transaction.Target</td>
+                <td>@transaction.IssuedBy</td>
+                <td>@transaction.Action</td>
+                <td>@transaction.EPBefore.Value</td>
+                <td>@transaction.EPAfter.Value</td>
+                <td>@transaction.GPBefore.Value</td>
+                <td>@transaction.GPAfter.Value</td>
+                <td>
+                    @{
+                        if (transaction.Item != null)
+                        {
+                            <a href="https://www.classic.wowhead.com/item=@transaction.Item.Id">View Item</a>
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('table').DataTable({
+                "pageLength": 5000,
+                "bSort": false
+            });
+        });
+    </script>
+}
