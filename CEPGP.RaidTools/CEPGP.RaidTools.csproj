@@ -135,6 +135,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\TransactionsController.cs" />
     <Compile Include="Areas\Admin\Controllers\StandingsController.cs" />
     <Compile Include="Areas\API\APIAreaRegistration.cs" />
@@ -169,6 +170,7 @@
     <Content Include="Areas\Admin\Views\Transactions\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Transactions\UploadSuccess.cshtml" />
     <Content Include="Areas\API\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="Properties\PublishProfiles\DENRaidTools - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />

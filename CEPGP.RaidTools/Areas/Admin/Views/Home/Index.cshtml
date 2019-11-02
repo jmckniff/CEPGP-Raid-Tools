@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row" style="margin-top: 15px; margin-bottom: 20px; padding-left: 15px;">
+    <p class="lead">This is the admin section of the @AppSettings.GuildName CEPGP loot system.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <p>
+            <a class="btn btn-default" style="margin-right: 10px;" href="@Url.Action("Index", "Standings")">Upload Standings</a>
+            <a class="btn btn-default" href="@Url.Action("Index", "Transactions")">Upload Transactions</a>
+        </p>
+    </div>
+</div>
