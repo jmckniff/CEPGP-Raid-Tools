@@ -1,0 +1,173 @@
+Name,Class,Rank,EP,GP,PR
+Ahfa,Hunter,Member,0,50,0
+Ailridae,Warlock,Initiate,0,50,0
+Akumiko,Warlock,Initiate,0,50,0
+Akumikor,Shaman,Social Member,0,50,0
+Astilla,Priest,Member,0,50,0
+Auctionalt,Warrior,Member,0,50,0
+Aviio,Priest,Member,0,50,0
+Azulla,Priest,Member,0,0
+Baboon,Warrior,Alt,0,50,0
+Balrodir,Warrior,Member,4701,83,56.63
+Bancai,Mage,Veteran,5680,68,83.52
+Bankalt,Warrior,Alt,0,0
+Bankaí,Mage,Veteran,0,50,0
+Barash,Warrior,Social Member,0,50,0
+Bensiano,Priest,Member,0,50,0
+Bird,Shaman,Member,6400,76,84.21
+Blightseal,Priest,Social Member,0,0
+Bls,Hunter,Member,0,50,0
+Boodles,Hunter,Initiate,0,50,0
+Brisk,Mage,Officer,0,50,0
+Buffaloa,Druid,Initiate,0,50,0
+Bénsiano,Druid,Member,0,50,0
+Cantbe,Priest,Member,0,50,0
+Charletos,Druid,Officer,6800,174,39.08
+Chillington,Warlock,Alt,0,0
+Chobo,Warrior,Officer,6800,50,136
+Chumajino,Hunter,Member,640,50,12.8
+Clairin,Priest,Member,2860,50,57.2
+Cortexiphan,Mage,Member,6640,69,96.23
+Cotlol,Hunter,Initiate,0,50,0
+Curby,Warlock,Initiate,0,50,0
+Czop,Priest,Member,0,50,0
+Darkstorm,Warlock,Initiate,0,0
+Darran,Warrior,Member,6080,114,53.33
+Deadhoes,Mage,Officer,6320,95,66.52
+Denbank,Warrior,Officer,0,50,0
+Denbanktwo,Warrior,Officer,0,50,0
+Dentirol,Warrior,Member,0,50,0
+Devastation,Hunter,Alt,0,50,0
+Devaztation,Warlock,Officer,6800,107,63.55
+Dhevin,Rogue,Member,0,0
+Dirtysprite,Druid,Social Member,0,0
+Draqu,Priest,Member,6720,90,74.66
+Drayjorma,Warlock,Member,6800,154,44.15
+Duumi,Priest,Veteran,6800,92,73.91
+Enleur,Priest,Social Member,0,0
+Erasto,Mage,Member,0,0
+Ethel,Priest,Officer,6340,104,60.96
+Executie,Warrior,Veteran,6720,75,89.6
+Ferisan,Mage,Social Member,0,50,0
+Fiedita,Shaman,Social Member,0,50,0
+Firezia,Hunter,Initiate,0,1,0
+Fizrik,Shaman,Member,5520,113,48.84
+Flinxs,Rogue,Alt,0,50,0
+Ftse,Warrior,Alt,0,50,0
+Físhfood,Warrior,Alt,0,50,0
+Gerreh,Hunter,Member,6800,88,77.27
+Goon,Rogue,Officer,3620,50,72.4
+Graphorn,Hunter,Member,0,0
+Grimzz,Mage,Alt,0,0
+Grimzzy,Hunter,Officer,5360,148,36.21
+Grinder,Mage,Alt,0,0
+Grinz,Hunter,Officer,0,50,0
+Grum,Warrior,Member,1400,50,28
+Hatty,Rogue,Veteran,6800,114,59.64
+Hetme,Warrior,Social Member,0,50,0
+Himbrint,Rogue,Member,6480,99,65.45
+Hopeshredder,Hunter,Alt,0,0
+Hypothermis,Mage,Officer,0,50,0
+Ivou,Warrior,Member,6800,73,93.15
+Jaws,Warrior,Alt,0,0
+Jist,Shaman,Member,0,50,0
+Joetheram,Warrior,Alt,0,0
+Joff,Warlock,Initiate,0,50,0
+Johnniemage,Mage,Social Member,0,0
+Johnykongo,Druid,Alt,0,1,0
+Juakali,Warlock,Officer,0,50,0
+Kartora,Mage,Initiate,0,0
+Kataizy,Warrior,Initiate,0,0
+Kennethbaker,Druid,Alt,0,50,0
+Kexxtar,Hunter,Member,6800,173,39.3
+Koniu,Warrior,Initiate,0,50,0
+Korohoro,Shaman,Alt,0,0
+Krisbjornsen,Priest,Alt,0,0
+Krudaris,Rogue,Alt,0,0
+Kuinu,Warrior,Veteran,2540,50,50.8
+Lerxer,Hunter,Member,100,82,1.21
+Lms,Warlock,Alt,0,50,0
+Lohgar,Warlock,Alt,0,50,0
+Lomonde,Warrior,Alt,0,0
+Luomusonni,Druid,Member,6500,77,84.41
+Manapause,Mage,Alt,0,50,0
+Maryjaina,Mage,Member,0,0
+Maxibon,Rogue,Officer,5180,50,103.6
+Maxibonbank,Warrior,Officer,0,50,0
+Mcwicki,Mage,Member,0,50,0
+Meandrunk,Rogue,Member,0,50,0
+Meditan,Warrior,Social Member,0,50,0
+Mehte,Rogue,Member,5780,90,64.22
+Midnightkid,Mage,Member,0,50,0
+Mivvy,Priest,Member,0,50,0
+Monarch,Mage,Member,6800,87,78.16
+Mætshield,Warrior,Member,0,0
+Necropotence,Rogue,Member,400,50,8
+Nixer,Rogue,Officer,1500,50,30
+Obyk,Warrior,Member,4540,50,90.8
+Onesho,Rogue,Member,0,50,0
+Orkimedes,Shaman,Alt,0,50,0
+Pei,Mage,Member,0,0
+Peibear,Druid,Alt,0,0
+Phíl,Shaman,Initiate,0,50,0
+Pikakassa,Hunter,Member,0,50,0
+Pokeypete,Rogue,Alt,0,0
+Pölsemannen,Mage,Member,0,50,0
+Qile,Priest,Member,0,50,0
+Quetzalcoatl,Shaman,Social Member,0,0
+Ragsu,Warrior,Member,1800,50,36
+Razgor,Rogue,Member,0,50,0
+Reativ,Priest,Member,6800,92,73.91
+Reekz,Warlock,Member,4920,111,44.32
+Rehgarre,Shaman,Officer,0,50,0
+Renan,Shaman,Alt,0,0
+Renissa,Priest,Veteran,0,50,0
+Resu,Priest,Member,0,50,0
+Rezu,Warrior,Member,0,50,0
+Rhease,Hunter,Member,0,0
+Rutai,Warrior,Alt,0,50,0
+Ruthelis,Rogue,Member,0,50,0
+Sarenox,Mage,Member,0,0
+Sekrom,Warrior,Alt,0,0
+Shaku,Warrior,Member,4820,50,96.4
+Sheer,Mage,Initiate,0,50,0
+Shenrox,Mage,Initiate,0,50,0
+Shentika,Shaman,Initiate,0,50,0
+Siisseli,Druid,Initiate,0,50,0
+Slicendice,Rogue,Alt,0,50,0
+Smiles,Warrior,Guild Master,6800,136,50
+Smilesbank,Warrior,Officer,0,50,0
+Spoodle,Warlock,Member,0,50,0
+Spooney,Shaman,Social Member,0,0
+Stqrm,Mage,Alt,0,50,0
+Stxrm,Priest,Officer,3300,50,66
+Styro,Druid,Officer,5320,205,25.95
+Styró,Priest,Alt,0,0
+Summonpls,Warlock,Alt,0,50,0
+Sushi,Mage,Alt,0,0
+Sógi,Shaman,Officer,5880,50,117.6
+Tasteless,Mage,Member,6800,99,68.68
+Tedmoosby,Shaman,Alt,0,50,0
+Themike,Warrior,Member,0,0
+Tigs,Warlock,Member,6400,102,62.74
+Tim,Rogue,Member,6320,83,76.14
+Totëm,Shaman,Member,0,50,0
+Tradealt,Warrior,Alt,0,50,0
+Trpimir,Mage,Member,0,50,0
+Twoflower,Priest,Member,0,0
+Vampslayer,Mage,Member,0,50,0
+Virtuoso,Rogue,Social Member,0,50,0
+Watsonbing,Mage,Member,0,50,0
+Whiterabbit,Priest,Officer,0,0
+Worak,Warlock,Alt,0,50,0
+Wrathschild,Priest,Social Member,0,0
+Wrathstalker,Warlock,Initiate,0,50,0
+Xhaano,Mage,Member,0,50,0
+Yanli,Shaman,Member,3720,93,40
+Yanlix,Warrior,Alt,0,50,0
+Yuì,Shaman,Social Member,0,0
+Zwei,Mage,Social Member,0,50,0
+Zyzze,Warlock,Member,0,0
+Ðen,Warlock,Alt,0,0
+Ðoc,Priest,Alt,0,0
+Ðouche,Warlock,Alt,0,0

@@ -22,14 +22,24 @@ namespace CEPGP.Persistence.File
         {
             var members = new List<Member>();
 
+            var standingsFilePath = Path.Combine(_cepgpDirectory.FullName, "CEPGP-Standings.txt");
+
+            var fileContent = System.IO.File.ReadAllText(standingsFilePath);
+
+            if (!fileContent.StartsWith("Name"))
+            {
+                var header = "Name,Class,Rank,EP,GP,PR" + Environment.NewLine;
+                fileContent = header + fileContent;
+                System.IO.File.WriteAllText(standingsFilePath, fileContent);
+            }
+
             var csvConfiguration = new Configuration
             {
                 IgnoreBlankLines = true,
                 MissingFieldFound = null
             };
 
-            var standingsFilePath = Path.Combine(_cepgpDirectory.FullName, "CEPGP-Standings.txt");
-
+           
             if (!System.IO.File.Exists(standingsFilePath))
             {
                 return members;

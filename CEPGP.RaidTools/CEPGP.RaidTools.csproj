@@ -135,7 +135,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AuthenticationController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\TransactionsController.cs" />
     <Compile Include="Areas\Admin\Controllers\StandingsController.cs" />
     <Compile Include="Areas\API\APIAreaRegistration.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="Areas\API\Controllers\TransactionsController.cs" />
     <Compile Include="Areas\API\Models\Transaction.cs" />
     <Compile Include="Areas\API\Models\Standing.cs" />
+    <Compile Include="Controllers\GearPointsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StandingsController.cs" />
     <Compile Include="Controllers\TransactionsController.cs" />
@@ -171,6 +174,7 @@
     <Content Include="Areas\Admin\Views\Transactions\UploadSuccess.cshtml" />
     <Content Include="Areas\API\Views\web.config" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="Properties\PublishProfiles\DENRaidTools - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -198,10 +202,12 @@
     <Content Include="Views\Standings\Index.cshtml" />
     <Content Include="Views\Transactions\Index.cshtml" />
     <Content Include="Views\Transactions\Member.cshtml" />
+    <Content Include="Views\GearPoints\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Authentication\" />
     <Folder Include="Areas\API\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>

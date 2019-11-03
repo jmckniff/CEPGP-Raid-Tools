@@ -1,0 +1,78 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "Item GP";
+}
+
+<h2>Item GP Values</h2>
+
+<p class="lead">
+    Item GP Formula: ((4.83 * 2) * (<b>ILVLHERE</b>/26 + (<b>ITEM RARITY</b> - 4)) * 1.5 = <b>GP</b>
+</p>
+
+<form class="form-horizontal">
+
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="item-rarity">Item Rarity</label>
+        <div class="col-sm-10">
+            <select id="item-rarity" class="form-control">
+                <option value="1">Common</option>
+                <option value="2">Uncommon</option>
+                <option value="3">Rare</option>
+                <option value="4" selected="selected">Epic</option>
+                <option value="5">Legendary</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-md-2 control-label" for="item-level">Item ilvl</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="item-level" placeholder="Enter the item's ilvl">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <button id="calculate-item-gp" type="submit" class="btn btn-default">Calculate GP</button>
+        </div>
+    </div>
+
+    <div id="item-gp-group" class="form-group" style="display: none;">
+        <div class="col-md-offset-2 col-sm-10">
+            <p id="item-gp-value" class="h4"></p>
+        </div>
+    </div>
+</form>
+
+
+
+
+@section scripts {
+    <script>
+        $(function() {
+
+            $("#calculate-item-gp").click(function(e) {
+                e.preventDefault();
+
+                var itemRarity = $("#item-rarity").val();
+                var itemLevel = $("#item-level").val();
+
+                if (!itemLevel) {
+                    return;
+                }
+
+                var ilvl = parseInt(itemLevel);
+                var rarity = parseInt(itemRarity);
+
+                var gp = ((4.83 * 2) * (ilvl / 26 + (rarity - 4))) * 1.5;
+
+                var gpRounded = Math.round(gp * 100) / 100;
+
+                $("#item-gp-value").text("The item is worth " + gpRounded + "GP");
+                $("#item-gp-group").show();
+            });
+
+        });
+    </script>
+}
