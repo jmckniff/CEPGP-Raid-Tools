@@ -8,6 +8,7 @@ This is a web application which can be used to display World of Warcraft EPGP st
 * View guild member EPGP standings.
 * View EPGP transactions.
 * View EPGP transactions for a specific Guild member.
+* View guild member raid attendance.
 
 #### Admin Section
 * Upload EPGP standings exported from CEPGP "/Admin/Standings"
