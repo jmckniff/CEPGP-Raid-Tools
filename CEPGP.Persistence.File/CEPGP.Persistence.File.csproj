@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Dto\MemberStanding.cs" />
     <Compile Include="FileStandingsRepository.cs" />
+    <Compile Include="FileRaidAttendanceRepository.cs" />
     <Compile Include="FileTransactionRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

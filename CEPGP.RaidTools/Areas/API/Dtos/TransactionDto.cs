@@ -1,6 +1,6 @@
-﻿namespace CEPGP.RaidTools.Areas.API.Models
+﻿namespace CEPGP.RaidTools.Areas.API.Dtos
 {
-    public class Transaction
+    public class TransactionDto
     {
         public string Target { get; set; }
         public string IssuedBy { get; set; }

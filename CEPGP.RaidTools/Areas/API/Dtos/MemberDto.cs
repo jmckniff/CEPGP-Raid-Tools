@@ -1,6 +1,6 @@
-﻿namespace CEPGP.RaidTools.Areas.API.Models
+﻿namespace CEPGP.RaidTools.Areas.API.Dtos
 {
-    public class Standing
+    public class MemberDto
     {
         public string Name { get; set; }
         public decimal EP { get; set; }

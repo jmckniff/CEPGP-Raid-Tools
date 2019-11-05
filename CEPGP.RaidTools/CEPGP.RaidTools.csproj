@@ -143,8 +143,10 @@
     <Compile Include="Areas\API\APIAreaRegistration.cs" />
     <Compile Include="Areas\API\Controllers\StandingsController.cs" />
     <Compile Include="Areas\API\Controllers\TransactionsController.cs" />
-    <Compile Include="Areas\API\Models\Transaction.cs" />
-    <Compile Include="Areas\API\Models\Standing.cs" />
+    <Compile Include="Areas\API\Dtos\MemberListDto.cs" />
+    <Compile Include="Areas\API\Dtos\TransactionDto.cs" />
+    <Compile Include="Areas\API\Dtos\MemberDto.cs" />
+    <Compile Include="Controllers\AttendanceController.cs" />
     <Compile Include="Controllers\GearPointsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StandingsController.cs" />
@@ -203,6 +205,7 @@
     <Content Include="Views\Transactions\Index.cshtml" />
     <Content Include="Views\Transactions\Member.cshtml" />
     <Content Include="Views\GearPoints\Index.cshtml" />
+    <Content Include="Views\Attendance\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

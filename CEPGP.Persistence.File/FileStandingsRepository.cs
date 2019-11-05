@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using CEPGP.Domain;
@@ -18,11 +17,18 @@ namespace CEPGP.Persistence.File
             _cepgpDirectory = cepgpDirectory;
         }
 
-        public List<Member> GetMembers()
+        public MemberList GetMembers()
         {
-            var members = new List<Member>();
+            var members = new MemberList();
 
             var standingsFilePath = Path.Combine(_cepgpDirectory.FullName, "CEPGP-Standings.txt");
+
+            if (!System.IO.File.Exists(standingsFilePath))
+            {
+                return members;
+            }
+
+            members.SetLastUpdatedDate(System.IO.File.GetCreationTime(standingsFilePath));
 
             var fileContent = System.IO.File.ReadAllText(standingsFilePath);
 
@@ -38,12 +44,6 @@ namespace CEPGP.Persistence.File
                 IgnoreBlankLines = true,
                 MissingFieldFound = null
             };
-
-           
-            if (!System.IO.File.Exists(standingsFilePath))
-            {
-                return members;
-            }
 
             using (var reader = new StreamReader(standingsFilePath))
             using (var csv = new CsvReader(reader, csvConfiguration))

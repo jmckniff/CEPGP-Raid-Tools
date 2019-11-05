@@ -10,6 +10,7 @@ namespace CEPGP.RaidTools.Controllers
         public ActionResult Index()
         {
             var cepgpDirectory = new DirectoryInfo(Server.MapPath("~/CEPGP/"));
+
             var repository = new FileStandingsRepository(cepgpDirectory);
             var members = repository.GetMembers();
 

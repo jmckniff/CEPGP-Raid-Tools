@@ -1,0 +1,60 @@
+﻿@model System.Collections.Generic.IEnumerable<CEPGP.Domain.Attendance>
+
+@{
+    ViewBag.Title = "Raid Attendance";
+}
+
+<h2>Raid Attendance</h2>
+
+<div style="margin-top: 20px; margin-bottom: 20px;">
+    @using (Html.BeginForm("Search", "Attendance", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        <div class="form-group">
+            <label>View attendance from:</label>
+            <select name="daysInPast" class="form-control">
+                <option value="7">Last 7 days</option>
+                <option value="14">Last 14 days</option>
+                <option value="30">Last 30 days</option>
+                <option value="0">All time</option>
+            </select>
+        </div>
+
+        <button id="search-attendance" type="submit" class="btn btn-default">Search</button>
+    }
+</div>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Total</th>
+            <th>Attended</th>
+            <th>Percent</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var attendance in Model)
+        {
+            <tr>
+                <td>
+                    <a href="@Url.Action("Member", "Transactions", new {username = attendance.Member.Name })">@attendance.Member.Name</a>
+                </td>
+                <td>@attendance.Total</td>
+                <td>@attendance.Attended</td>
+                <td>@attendance.AttendancePercent%</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $('table').DataTable({
+                "paging": false,
+                "order": [[3, "desc"]]
+            });
+        });
+    </script>
+}

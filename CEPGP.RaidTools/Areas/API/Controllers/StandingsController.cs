@@ -1,8 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Web.Mvc;
 using CEPGP.Persistence.File;
-using CEPGP.RaidTools.Areas.API.Models;
+using CEPGP.RaidTools.Areas.API.Dtos;
+using Newtonsoft.Json;
 
 namespace CEPGP.RaidTools.Areas.API.Controllers
 {
@@ -14,11 +16,15 @@ namespace CEPGP.RaidTools.Areas.API.Controllers
             var repository = new FileStandingsRepository(cepgpDirectory);
             var members = repository.GetMembers();
 
-            var standings = new List<Standing>();
+            var memberList = new MemberListDto
+            {
+                LastUpdateDate = JsonConvert.SerializeObject(members.LastUpdateDate),
+                Members = new List<MemberDto>()
+            };
 
             foreach (var member in members)
             {
-                standings.Add(new Standing
+                memberList.Members.Add(new MemberDto
                 {
                     Name = member.Name,
                     EP = member.EP.Value,
@@ -27,7 +33,7 @@ namespace CEPGP.RaidTools.Areas.API.Controllers
                 });
             }
 
-            return Json(standings, JsonRequestBehavior.AllowGet);
+            return Json(memberList, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -1,10 +1,12 @@
-﻿@model System.Collections.Generic.IEnumerable<CEPGP.Domain.Member>
+﻿@model CEPGP.Domain.MemberList
 
 @{
     ViewBag.Title = "Guild Standings";
 }
 
 <h2>Guild Standings</h2>
+
+<p>Last Updated: @Model.LastUpdateDate.ToString("dd/MM/yyyy")</p>
 
 <table class="table table-striped table-bordered">
     <thead>
@@ -13,19 +15,17 @@
             <th>EP</th>
             <th>GP</th>
             <th>PR</th>
-            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var transaction in Model)
         {
-            <tr>
-                <td>@transaction.Name</td>
-                <td>@transaction.EP.Value</td>
-                <td>@transaction.GP.Value</td>
-                <td>@transaction.CalculatePR().Value.ToString("##.##")</td>
-                <td>@Html.ActionLink("View Transactions", "Member", "Transactions", new { username = @transaction.Name}, null)</td>
-            </tr>
+        <tr>
+            <td>@Html.ActionLink(@transaction.Name, "Member", "Transactions", new { username = @transaction.Name }, null)</td>
+            <td>@transaction.EP.Value</td>
+            <td>@transaction.GP.Value</td>
+            <td>@transaction.CalculatePR().Value.ToString("##.##")</td>
+        </tr>
         }
     </tbody>
 </table>

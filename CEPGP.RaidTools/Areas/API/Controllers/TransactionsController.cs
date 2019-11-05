@@ -2,7 +2,7 @@
 using System.IO;
 using System.Web.Mvc;
 using CEPGP.Persistence.File;
-using Transaction = CEPGP.RaidTools.Areas.API.Models.Transaction;
+using CEPGP.RaidTools.Areas.API.Dtos;
 
 namespace CEPGP.RaidTools.Areas.API.Controllers
 {
@@ -15,11 +15,11 @@ namespace CEPGP.RaidTools.Areas.API.Controllers
             var repository = new FileTransactionRepository(cepgpDirectory);
             var transactions = repository.GetTransactions();
 
-            var transactionDtos = new List<Transaction>();
+            var transactionDtos = new List<TransactionDto>();
 
             foreach (var transaction in transactions)
             {
-                transactionDtos.Add(new Transaction
+                transactionDtos.Add(new TransactionDto
                 {
                     Target = transaction.Target,
                     IssuedBy = transaction.IssuedBy,
@@ -41,11 +41,11 @@ namespace CEPGP.RaidTools.Areas.API.Controllers
             var repository = new FileTransactionRepository(cepgpDirectory);
             var transactions = repository.GetTransactionsForMember(username);
 
-            var transactionDtos = new List<Transaction>();
+            var transactionDtos = new List<TransactionDto>();
 
             foreach (var transaction in transactions)
             {
-                transactionDtos.Add(new Transaction
+                transactionDtos.Add(new TransactionDto
                 {
                     Target = transaction.Target,
                     IssuedBy = transaction.IssuedBy,

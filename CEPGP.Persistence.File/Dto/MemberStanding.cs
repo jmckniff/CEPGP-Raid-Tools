@@ -1,6 +1,6 @@
 ﻿namespace CEPGP.Persistence.File.Dto
 {
-    public class MemberStanding
+    internal class MemberStanding
     {
         public string Name { get; set; }
         public string Class { get; set; }
